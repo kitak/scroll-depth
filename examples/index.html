@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    ul {
+      height: 500px;
+      overflow: scroll;
+    }
+  </style>
+  <script src="../index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var ul = document.querySelector('ul');
+      var scrollDepth = new ScrollDepth({
+        target: ul,
+        depth: 1,
+        throttle: 12,
+        onReach: function () {
+          console.log('reach');
+        }
+      });
+      setTimeout(function () {
+        scrollDepth.cancel();
+      }, 5000);
+    });
+  </script>
+</head>
+<body>
+  <ul>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+    <li>XXX</li>
+  </ul>
+</body>
+</html>
